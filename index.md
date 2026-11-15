@@ -4,7 +4,7 @@ title: Worldeck privacy policy
 
 # Worldeck privacy policy
 
-Last updated: November 14, 2026
+Last updated: November 15, 2026
 
 Worldeck is a mixed-reality app for Meta Quest. You pick a place, or say or type one, and your room becomes that place. This page explains what data the app uses, why, where it goes, and how to have it deleted.
 
@@ -35,7 +35,7 @@ Worldeck is a mixed-reality app for Meta Quest. You pick a place, or say or type
 |---|---|
 | Hand and head tracking, and your room layout from Quest's Space Setup (walls, floor, furniture boxes and their labels) | To turn your room into the world around you, fit the world's objects to your furniture, keep things within reach, and fade back to your room if you stand up |
 | Your progress: worlds you have finished, souvenirs and where they stand on your table, how far you are in Mara's story, saved worlds, your daily streak, your records, your settings (caption size, sound, comfort options), whether you have seen the introduction, and whether voice is on | So the app remembers you between sessions |
-| A play log: which worlds were opened and how they were asked for, how long the room took to change, how long speech took to turn into text, frame times, and error messages | To measure how well the app works and to find and fix problems. **It never contains your words or your voice,** only counts and timings |
+| A play log: which worlds were opened and how they were asked for, how long the room took to change, how long speech took to turn into text, frame times, memory use, error messages, the headset model and system version, battery level, whether it is charging, its temperature state, and your comfort settings. The app keeps the last 30 sessions and deletes older ones | To measure how well the app works and to find and fix problems. **It never contains your words or your voice:** only counts, timings and device and setting values |
 | A random install number | To limit how many AI requests one headset can make. It is not linked to your Meta account or your headset's serial number |
 
 ## What can leave your headset: requests the app doesn't know
@@ -45,7 +45,7 @@ Worldeck is a mixed-reality app for Meta Quest. You pick a place, or say or type
 | The text of a request said to Juniper (by name, or just after you touched Juniper to talk) or typed, that the app can't answer by itself (for example "a castle in the snow", "make me a rubber duck", a question about a thing you are holding up, like "how fast could it run?", or a question to someone who lives in a world), the current world's settings, the short names of things you have already made in this world (like "lantern"), and which kinds of furniture your room has to put things on (like "table" or "sofa", never their sizes or positions). Never audio | Our relay, then Anthropic's Claude AI | To answer with a world composed from the app's own kit (its colours, sky, plants and objects), or a thing built from simple shapes | Not by us. The relay does not store your words. Anthropic processes them under its commercial terms, which do not allow training on them |
 | The random install number and a shared app key | Our relay | To stop one device sending too many requests | Request counts only, for one minute |
 
-The relay is a small program we run on Cloudflare Workers. It keeps a count of requests and the time each took. It does not keep your words. To answer the same request faster next time, it may keep the answer (the world's settings, never your words) under a one-way code made from the request, for up to 30 days. If you only use the worlds on the map, or the relay can't be reached, nothing leaves your headset at all.
+The relay is a small program we run on Cloudflare Workers. For each request it writes one log line (whether it worked, how long it took, how many AI tokens it used, and a random number for that request), which Cloudflare keeps for a few days so we can find problems. That line never contains your words, the install number, or anything made from them. The relay does not keep your words. To answer the same request faster next time, it may keep the answer (the world's settings and a short title, never the request itself) under a one-way code made from the request, for up to 30 days. If you only use the worlds on the map, or the relay can't be reached, nothing leaves your headset at all.
 
 ## Achievements and leaderboards (Meta)
 
