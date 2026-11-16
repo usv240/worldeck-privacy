@@ -4,7 +4,7 @@ title: Worldeck privacy policy
 
 # Worldeck privacy policy
 
-Last updated: November 15, 2026
+Last updated: November 16, 2026
 
 Worldeck is a mixed-reality app for Meta Quest. You pick a place, or say or type one, and your room becomes that place. This page explains what data the app uses, why, where it goes, and how to have it deleted.
 
@@ -34,7 +34,7 @@ Worldeck is a mixed-reality app for Meta Quest. You pick a place, or say or type
 | Data | Why |
 |---|---|
 | Hand and head tracking, and your room layout from Quest's Space Setup (walls, floor, furniture boxes and their labels) | To turn your room into the world around you, fit the world's objects to your furniture, keep things within reach, and fade back to your room if you stand up |
-| Your progress: worlds you have finished, souvenirs and where they stand on your table, how far you are in Mara's story, saved worlds, your daily streak, your records, your settings (caption size, sound, comfort options), whether you have seen the introduction, and whether voice is on | So the app remembers you between sessions |
+| Your progress: worlds you have finished, souvenirs and where they stand on your table, how far you are in Mara's story, which of your furniture is still dark in her story (by Quest's own ID for that piece of furniture from Space Setup, never its size, shape or position), saved worlds, your daily streak, your records, your settings (caption size, sound, comfort options), whether you have seen the introduction, and whether voice is on | So the app remembers you between sessions |
 | A play log: which worlds were opened and how they were asked for, how long the room took to change, how long speech took to turn into text, frame times, memory use, error messages, the headset model and system version, battery level, whether it is charging, its temperature state, and your comfort settings. The app keeps the last 30 sessions and deletes older ones | To measure how well the app works and to find and fix problems. **It never contains your words or your voice:** only counts, timings and device and setting values |
 | A random install number | To limit how many AI requests one headset can make. It is not linked to your Meta account or your headset's serial number |
 
